@@ -16,7 +16,20 @@ public class FirstRestController {
     /// expose "/" to return Hello world!
     @GetMapping("/")
     public String helloWorld(){
-        return "Hello world $$$!";
+        return "Hello world $$$777!";
     }
+
+    /// expose new endpoint "workout"
+    @GetMapping("/workout")
+    public String hardWorkout(){
+       return "This is hard workout 5k running";
+    }
+
+    /// expose new endpoint "fortune"
+    @GetMapping("/fortune")
+    public String dailyFortune(){
+        return "My daily fortune";
+    }
+
 
 }
