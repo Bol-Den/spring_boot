@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class FirstRestController {
 
     /// expose "/" to return Hello world!
-
     @GetMapping("/")
     public String helloWorld(){
         return "Hello world!";
